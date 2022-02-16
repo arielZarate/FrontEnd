@@ -1,0 +1,105 @@
+/*Selectores sibling*/
+
+/*Selecciona los p cuyo padre es un div*/
+div > p {
+  color: red;
+  background-color: yellow;
+}
+
+/*Selecciona los parrafos p adyacentes a div, 
+  y tener el mismo nivel de jerarquia*/
+div + p {
+  color: red;
+  background-color: yellow;
+}
+
+/*CSS: Selecciona los p cuyo div es hermano (sibling). 
+  P debe estar despues de div. No es necesariamente adyacente*/
+div ~ p {
+  color: blue;
+  background-color: goldenrod;
+}
+
+/*Selector de atributos*/
+
+/*Elemento a del atributo href que comience con http
+expresiones Regulares
+^: significa que comienze
+$:significa que termine
+*/
+a[href^="http"] {
+  color: red;
+}
+
+/*Elemento a del atributo href que comience con http*/
+a[href$=".pdf"] {
+  color: green;
+}
+
+/*
+ahora se va aplicar este porque es el ultimo en cascada , modificara el color:red
+*/
+a[href$=".html"] {
+  color: blueviolet;
+}
+
+/*Elemento a del atributo href que termine con pdf*/
+a[href$=".pdf"] {
+  background: url(../images/pdf_icon.png) no-repeat right;
+  padding-right: 25px;
+  color: darkred;
+}
+
+/*Selectores nchild*/
+h1:first-child {
+  color: darkcyan;
+}
+
+h1:last-of-type {
+  color: yellowgreen;
+}
+
+li:first-child {
+  color: red;
+}
+
+/*Selecciona el segundo elemento*/
+li:nth-child(2) {
+  color: green;
+}
+
+/*Selecciona cada 3 elementos*/
+/*li:nth-child(3n){
+    color:purple;
+  }*/
+
+/*selecciona cada 3 elementos comenzando en 2do elemento*/
+/*li:nth-child(3n+2){
+    color:purple;
+  }*/
+
+/*Selecciona los elementos de manera inversa comenzando en 4to*/
+/*li:nth-child(-1n+4){
+    color: purple;
+  }*/
+
+/*selecciona el 4to elemento contando en reversa*/
+/*li:nth-last-child(4){
+    color: purple;
+  }*/
+
+/*selecciona el 7to elemento contando en reversa*/
+/*li:nth-last-child(1n+7){
+    color: purple;
+  }*/
+
+/*selecciona los ultimos 3 y 3 primeros elementos respectivamente*/
+li:nth-child(1n + 8),
+li:nth-last-child(1n + 8) {
+  color: darkorange;
+}
+
+#i {
+  background-color: black;
+  color: white;
+}

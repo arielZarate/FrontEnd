@@ -1,0 +1,42 @@
+.cabecero-contenedor,
+.principal aside {
+  -webkit-box-shadow: 0 5px 10px #aaa;
+  -moz-box-shadow: 0 5px 10px #aaa;
+  box-shadow: 0 5px 10px #aaa;
+}
+
+.titulo {
+  float: left;
+}
+
+nav {
+  float: right;
+  width: 38%;
+}
+
+/*articulos flotados a la izquierda*/
+.principal article {
+  float: left;
+  width: 57%;
+}
+
+/*elemento aside flotado a la derecha*/
+.principal aside {
+  float: right;
+  width: 28%;
+  padding: 0px 5% 10px;
+}
+
+/* ===================
+   Ancho máximo página
+   =================== */
+
+@media only screen and (min-width: 1140px) {
+  .contenedor {
+    width: 1026px;
+    /*centramos el contenido*/
+
+    /* margin:0 auto acepta los elemenmtos no pierde el formato si se pasa los 1026px */
+    margin: 0 auto;
+  }
+}

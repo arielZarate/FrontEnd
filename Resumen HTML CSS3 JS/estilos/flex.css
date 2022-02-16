@@ -1,0 +1,66 @@
+/* esto modifca el div dentro del container */
+#container div {
+  background: cadetblue;
+  padding: 10px;
+  width: 40 px;
+  margin: 10px;
+}
+
+/*
+atencion en bootstrap es asi
+  display: flex;
+  flex-wrap: wrap; //sirve para colapsar
+
+ 
+*/
+
+/*
+estos son los prefix en css
+display: -moz-box;
+  display: -webkit-box; */
+#container {
+  width: 500px;
+  height: 300px;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  border: dashed gray;
+
+  /* ahora la alineacion vertical como horizontal 
+   la direccion
+  */
+
+  /*
+ en BootStrap pero debe estar en roew y col todos
+    display: flex;
+  flex-wrap: wrap-reverse;
+  text-align: center;
+  justify-content: center
+ 
+*/
+
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+
+  -moz-box-align: center;
+  -webkit-box-align: center;
+
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+}
+
+/* 
+-webkit-box-flex: 1; //sirve para adaptar la caja al tamaño del ancho del padre 
+}
+ 
+*/
+#uno,
+#dos,
+#tres,
+#cuatro {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+}
