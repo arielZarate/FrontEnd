@@ -1,8 +1,25 @@
 h1{
     background: salmon;
-    display: inline-block;
+   display: inline-block; 
 }
 a{
     background: salmon;
-    display: block;
+ /*   display: block; */
+}
+
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+
+/* para que funcione align self debe estar en  */
+.item{
+     
+
+    align-self:flex-start;
 }

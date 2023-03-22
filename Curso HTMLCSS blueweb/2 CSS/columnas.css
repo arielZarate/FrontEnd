@@ -1,14 +1,17 @@
-nav{
+nav {
     background: #00b8a9;
     padding: 20px;
 }
-.columna{
+
+.columna {
     background: #f6416c;
-    color:#f8f3d4;
+    color: #f8f3d4;
     padding: 20px;
     width: 25%;
     margin: 10px;
 }
-.padre{
+
+.padre {
     display: flex;
+    flex-wrap: wrap;
 }
